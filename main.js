@@ -3,7 +3,8 @@ const sharp = require('sharp');
 const path = require('path');
 
 // ------------ IMPORTANT STUFF HERE ---------------
-const songsDir = 'F:\\osu!\\Songs';
+const songsDir = 'your\\osu!\\songs\\filepath\\here';
+let blurLevel = 1.75; //this is what the sample image on github is, feel free to play with this number, but much higher might just be a blob of colors
 // Only run one at a time. By running both at once, you accept any and all risk :)
 // revertBGs();
 blurBGs();
@@ -115,7 +116,7 @@ async function blurBGs(){
             sharp(localFile)
             .blur(15)
             .modulate({
-                saturation: 1.75,
+                saturation: blurLevel,
               })
             .toFile(imageFile, (err, info) => {
                 if(err){
