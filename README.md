@@ -17,9 +17,15 @@ the images again. Make sure to save any edits before closing.
 
 WARNING: DON'T BLUR TWICE IN A ROW AS IT MIGHT DELETE THE ORIGINAL BACKUPS!!!
 
-Open the command line within the blurrificator's folder and type
+Open the command line within the blurrificator's folder and type this and hit enter:
+```
+npm i
+```
+This will install the dependency of this project, [Sharp](https://www.npmjs.com/package/sharp)
+
+Then type this and hit enter:
+
 ```
 node main.js
 ```
-
 Wait awhile, from a few seconds to 5+ minutes, depending on how many beatmaps you have. 
