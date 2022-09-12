@@ -1,9 +1,6 @@
 # osu-image-blurrificator
 will blur osu! backgrounds and store backups of the originals for reverting if wanted
 
-![Hi tie](https://osu.ppy.sh/ss/17970126/d69a)
-
-
 ### Steps to use:
 Install [Node](https://nodejs.org/en/download/) and npm (included in node)
 
